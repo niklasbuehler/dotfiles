@@ -1,0 +1,14 @@
+#!/bin/sh
+xsetroot -cursor_name left_ptr
+
+bspc monitor --reset-desktops 1 2 3 # laptop
+bspc monitor DP2 --reset-desktops 1 # desktop
+bspc monitor DP1 --reset-desktops 2 3 4 # desktop
+
+bspc config single_monocle on
+bspc config gapless_monocle on
+bspc config borderless_monocle on
+
+bspc config automatic_scheme alternate
+
+bspc rule -a Zathura state=tiled
