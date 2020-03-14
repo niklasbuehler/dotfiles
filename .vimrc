@@ -9,7 +9,7 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 set encoding=utf-8
-set relativenumber
+set nu rnu " hybrid line numbers
 set smartindent
 " Disable beeping
 set noerrorbells

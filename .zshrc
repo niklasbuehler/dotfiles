@@ -1,6 +1,7 @@
 # exports
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export COLORTERM="st-256color"
+export LANG=en_US.UTF-8
 
 # configure zsh
 PROMPT='%B%F{red}%n%f%F{white}@%f%m%b %F{blue}%B%~%b%f %# '
