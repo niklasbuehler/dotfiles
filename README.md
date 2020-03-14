@@ -14,20 +14,26 @@ I use
 This section and the next one are mostly for me to remember how to [set this up correctly](https://www.atlassian.com/git/tutorials/dotfiles).
 
 Put this alias into your *.zshrc* and define it in the currently running shell:  
-`$ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> .zshrc`  
-`$ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
+`echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> .zshrc`  
+`alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
 
-Next, avoid some weird recursion:  
-`$ echo ".cfg" >> .gitignore`
+Next, to avoid some weird recursion:  
+`echo ".cfg" >> .gitignore`
 
-Finally clone and disable showing untracked files for this repo:  
-`$ git clone --bare https://github.com/niklasbuehler/dotfiles.git $HOME/.cfg`  
-`$ config config --local status.showUntrackedFiles no`
+Clone and disable showing untracked files for this repo:  
+`git clone --bare https://github.com/niklasbuehler/dotfiles.git $HOME/.cfg`  
+`config config --local status.showUntrackedFiles no`
+
+Finally, apply the dotfiles. This might give an error if there are config files that would be overwritten. Just follow the steps described in the error message.  
+`config checkout`
 
 ## Usage
-```$ config status
-$ config add .vimrc
-$ config commit -m "Add vimrc"
-$ config add .bashrc
-$ config commit -m "Add bashrc"
-$ config push
+```config status
+config add .vimrc
+config commit -m "Add vimrc"
+config add .bashrc
+config commit -m "Add bashrc"
+config push
+
+config pull
+config checkout
