@@ -3,7 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export COLORTERM="st-256color"
 
 # configure zsh
-PROMPT='%B%F{red}%n%f@%F{white}%m%f%b %F{blue}%B%~%b%f %# '
+PROMPT='%B%F{red}%n%f%F{white}@%f%m%b %F{blue}%B%~%b%f %# '
 autoload -Uz compinit colors
 compinit
 colors
