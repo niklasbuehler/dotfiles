@@ -10,4 +10,5 @@ unlutter -idle 0.5 &
 redshift -c /home/niklas/.config/redshift.conf &
 xautolock -detectsleep -time 10 -locker slock &
 sxhkd &
+wmname LG3D # this fixes the issues of java UIs with bspwm
 exec bspwm

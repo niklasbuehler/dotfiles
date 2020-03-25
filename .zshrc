@@ -17,4 +17,5 @@ unsetopt beep
 # aliases
 alias config='/usr/bin/git --git-dir=/home/niklas/.cfg/ --work-tree=/home/niklas'
 alias hibernate="systemctl hibernate -i"
-alias ls="ls --color=auto"
+alias ls="ls --color=always"
+alias less="less -r"
