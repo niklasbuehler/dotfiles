@@ -1,5 +1,6 @@
 #!/bin/sh
 xsetroot -cursor_name left_ptr
+wmname LG3D # this fixes the issues of java UIs with bspwm
 
 bspc monitor --reset-desktops 1 2 3 # laptop
 bspc monitor DP2 --reset-desktops 1 # desktop

@@ -14,8 +14,8 @@ super + r
 super + Return
 	st
 super + @space
-	dmenu_run
-	# rofi -show drun
+	rofi -show drun
+	#dmenu_run
 super + w
 	tabbed -c -k surf -e
 super + u
