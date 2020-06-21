@@ -7,7 +7,7 @@ super + Escape
 	slock
 
 # make sxhkd reload its configuration files:
-super + r
+super + shift + r
 	pkill -USR1 -x sxhkd
 
 # spawning programs
@@ -23,7 +23,7 @@ super + u
 	st vifm ~/Uni
 super + e
 	mailsync; st neomutt
-super + n
+super + r
 	st newsboat
 
 # media keys
