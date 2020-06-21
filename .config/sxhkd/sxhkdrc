@@ -17,9 +17,14 @@ super + @space
 	rofi -show drun
 	#dmenu_run
 super + w
-	tabbed -c -k surf -e
+	brave
+	#tabbed -c -k surf -e
 super + u
 	st vifm ~/Uni
+super + e
+	mailsync; st neomutt
+super + n
+	st newsboat
 
 # media keys
 {_,shift + }XF86Audio{Lower,Raise}Volume

@@ -9,11 +9,14 @@ set runtimepath=$XDG_CONFIG_HOME/vim,$VIMRUNTIME,$XDG_CONFIG_HOME/vim/after,$XDG
 let mapleader=" "
 set nocompatible
 filetype plugin on
-syntax enable
 filetype plugin indent on
+set tabstop=4
+
+syntax enable
 set background=dark
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 colorscheme solarized
+
 set encoding=utf-8
 set nu rnu " hybrid line numbers
 set smartindent
