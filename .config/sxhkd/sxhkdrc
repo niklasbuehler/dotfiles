@@ -17,8 +17,10 @@ super + @space
 	rofi -show drun
 	#dmenu_run
 super + w
+	tabbed -c -k surf -e
+	#surf
+super + shift + w
 	brave
-	#tabbed -c -k surf -e
 super + u
 	st vifm ~/Uni
 super + e

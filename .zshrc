@@ -14,6 +14,10 @@ export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 export IDEA_PROPERTIES="${XDG_CONFIG_HOME}"/intellij-idea/idea.properties
 export IDEA_VM_OPTIONS="${XDG_CONFIG_HOME}"/intellij-idea/idea.vmoptions
+export EDITOR="vim"
+
+# configure system
+sudo loadkeys $HOME/.config/kbd/compose.inc
 
 # configure zsh
 PROMPT='%B%F{red}%n%f%F{white}@%f%m%b %F{blue}%B%~%b%f %# '

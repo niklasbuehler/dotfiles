@@ -11,3 +11,4 @@ redshift -c /home/niklas/.config/redshift.conf &
 xautolock -detectsleep -time 10 -locker slock &
 sxhkd &
 exec bspwm
+#9 rio -term st -virtuals 3
