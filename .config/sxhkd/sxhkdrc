@@ -4,13 +4,15 @@
 
 # lock screen
 super + Escape
-	slock
+	lock
 
 # make sxhkd reload its configuration files:
 super + shift + r
 	pkill -USR1 -x sxhkd
 
 # spawning programs
+super + d
+	drawspawn
 super + Return
 	st
 super + @space

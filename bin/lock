@@ -1,0 +1,3 @@
+#!/bin/sh
+#slock
+xlock -fontset "Noto Sans Mono" -mode mountain

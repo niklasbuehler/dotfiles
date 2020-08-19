@@ -3,23 +3,23 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 rofi.lines: 5
 
-*background: #000000
-*color0: black
-*color1: red
-*color2: green
-*color3: yellow
-*color4: light blue
-*color5: magenta
-*color6: cyan
-*color7: gray
-*color8: gray
-*color9: red
-*color10: green
-*color11: yellow
-*color12: blue
-*color13: magenta
-*color14: cyan
-*color15: white
+!*background: #000000
+!*color0: black
+!*color1: red
+!*color2: green
+!*color3: yellow
+!*color4: light blue
+!*color5: magenta
+!*color6: cyan
+!*color7: gray
+!*color8: gray
+!*color9: red
+!*color10: green
+!*color11: yellow
+!*color12: blue
+!*color13: magenta
+!*color14: cyan
+!*color15: white
 
 ! Solarized color scheme for the X Window System
 !
@@ -67,28 +67,28 @@ rofi.lines: 5
 !
 ! URxvt*background:            S_base03
 
-!*background:              S_base03
-!*foreground:              S_base0
-!*fading:                  40
-!*fadeColor:               S_base03
-!*cursorColor:             S_base1
-!*pointerColorBackground:  S_base01
-!*pointerColorForeground:  S_base1
+*background:              S_base03
+*foreground:              S_base0
+*fading:                  40
+*fadeColor:               S_base03
+*cursorColor:             S_base1
+*pointerColorBackground:  S_base01
+*pointerColorForeground:  S_base1
 
-!*color0:                  S_base02
-!*color1:                  S_red
-!*color2:                  S_green
-!*color3:                  S_yellow
-!*color4:                  S_blue
-!*color5:                  S_magenta
-!*color6:                  S_cyan
-!*color7:                  S_base2
-!*color9:                  S_orange
-!*color8:                  S_base03
-!*color10:                 S_base01
-!*color11:                 S_base00
-!*color12:                 S_base0
-!*color13:                 S_violet
-!*color14:                 S_base1
-!*color15:                 S_base3
+*color0:                  S_base02
+*color1:                  S_red
+*color2:                  S_green
+*color3:                  S_yellow
+*color4:                  S_blue
+*color5:                  S_magenta
+*color6:                  S_cyan
+*color7:                  S_base2
+*color9:                  S_orange
+*color8:                  S_base03
+*color10:                 S_base01
+*color11:                 S_base00
+*color12:                 S_base0
+*color13:                 S_violet
+*color14:                 S_base1
+*color15:                 S_base3
 

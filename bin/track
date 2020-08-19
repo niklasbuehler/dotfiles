@@ -1,0 +1,2 @@
+#!/bin/sh
+while true; do thyme track -o /home/niklas/Documents/thymelogs/data/$(date +'%d-%m-%y').json; sleep 30s; done;

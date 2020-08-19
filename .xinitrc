@@ -8,7 +8,8 @@ amixer -q sset Master mute
 #/home/niklas/bin/monitors.sh
 unlutter -idle 0.5 &
 redshift -c /home/niklas/.config/redshift.conf &
-xautolock -detectsleep -time 10 -locker slock &
+xautolock -detectsleep -time 10 -locker lock &
 sxhkd &
+track &
 exec bspwm
 #9 rio -term st -virtuals 3

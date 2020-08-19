@@ -2,10 +2,11 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export COLORTERM="st-256color"
 export LANG=en_US.UTF-8
-export SAVEHIST=1000
 export XDG_CONFIG_HOME=/home/niklas/.config
 export XDG_CACHE_HOME=/home/niklas/.cache
 export XDG_DATA_HOME=/home/niklas/.local/share
+export HISTSIZE=999999999
+export SAVEHIST=$HISTSIZE
 export HISTFILE="$XDG_CONFIG_HOME"/zsh/zsh_hist
 export LESSHISTFILE=-
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
@@ -33,3 +34,5 @@ alias config='/usr/bin/git --git-dir=/home/niklas/.cfg/ --work-tree=/home/niklas
 alias hibernate="systemctl hibernate -i"
 alias ls="ls --color=always"
 alias less="less -r"
+alias btcon="sudo systemctl start bluetooth; bluetoothctl power on; bluetoothctl connect F0:EF:86:BC:AD:FB"
+alias t="date +%H:%M"

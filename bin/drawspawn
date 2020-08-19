@@ -1,0 +1,2 @@
+#!/bin/sh
+rect="$(slop)" && bspc rule -a '*' -o state=floating rectangle="$rect"

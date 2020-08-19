@@ -1,0 +1,2 @@
+#!/bin/sh
+restic -r /run/media/niklas/HDDRIVE2GO/backup backup bin Documents Library Music Pictures README.md repos Videos .config .password-store .ssh
