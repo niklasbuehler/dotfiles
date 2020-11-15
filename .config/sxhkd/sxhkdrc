@@ -16,8 +16,8 @@ super + d
 super + Return
 	st
 super + @space
-	rofi -show drun
-	#dmenu_run
+	dmenu_run
+	#rofi -show drun
 super + w
 	tabbed -c -k surf -e
 	#surf
@@ -29,6 +29,8 @@ super + e
 	mailsync; st neomutt
 super + r
 	st newsboat
+super + a
+	showinfo
 
 # media keys
 {_,shift + }XF86Audio{Lower,Raise}Volume
@@ -99,10 +101,10 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+#super + {o,i}
+	#bspc wm -h off; \
+	#bspc node {older,newer} -f; \
+	#bspc wm -h on
 
 # focus given desktop
 super + {1-9,0}

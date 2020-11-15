@@ -14,3 +14,5 @@ bspc config automatic_scheme alternate
 
 bspc rule -a Zathura state=tiled
 bspc rule -a Surf state=tiled
+
+track

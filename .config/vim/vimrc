@@ -13,7 +13,7 @@ filetype plugin indent on
 set tabstop=4
 
 syntax enable
-set background=light
+set background=dark
 "let g:solarized_termcolors=256
 colorscheme solarized
 
@@ -43,6 +43,8 @@ map <C-l> <C-w>l
 noremap <F5> :set list!<CR>
 inoremap <F5> <C-o>:set list!<CR>
 cnoremap <F5> <C-c>:set list!<CR>
+imap jk <Esc>
+imap kj <Esc>
 
 " S to replace all
 nnoremap S :%s//g<Left><Left>

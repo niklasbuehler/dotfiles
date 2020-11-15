@@ -1,5 +1,5 @@
 # exports
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/go/bin:/usr/local/bin:$PATH:$HOME/repos/flutter/bin
 export COLORTERM="st-256color"
 export LANG=en_US.UTF-8
 export XDG_CONFIG_HOME=/home/niklas/.config
@@ -11,6 +11,7 @@ export HISTFILE="$XDG_CONFIG_HOME"/zsh/zsh_hist
 export LESSHISTFILE=-
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export ANDROID_SDK_HOME="$XDG_CONFIG_HOME"/android
+export ANDROID_HOME=$HOME/Android/Sdk
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 export IDEA_PROPERTIES="${XDG_CONFIG_HOME}"/intellij-idea/idea.properties
@@ -36,3 +37,4 @@ alias ls="ls --color=always"
 alias less="less -r"
 alias btcon="sudo systemctl start bluetooth; bluetoothctl power on; bluetoothctl connect F0:EF:86:BC:AD:FB"
 alias t="date +%H:%M"
+alias thymelog='/home/niklas/Documents/thymelogs/show.sh'

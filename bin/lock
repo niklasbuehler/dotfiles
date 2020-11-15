@@ -1,3 +1,28 @@
-#!/bin/sh
+#!/bin/bash
 #slock
-xlock -fontset "Noto Sans Mono" -mode mountain
+array[0]="moutain"
+array[1]="grav"
+array[2]="molecule"
+array[3]="coral"
+array[4]="slip"
+array[5]="ant"
+array[6]="galaxy"
+array[7]="thornbird"
+array[8]="wire"
+array[9]="loop"
+array[10]="fiberlamp"
+array[11]="triangle"
+array[12]="qix"
+array[13]="space"
+array[14]="ball"
+array[15]="mandelbrot"
+array[16]="julia"
+array[17]="petri"
+array[18]="kumppa"
+array[19]="swarm"
+array[20]="penrose"
+array[21]="life3d"
+array[22]="euler2d"
+size=${#array[@]}
+index=$(($RANDOM % $size))
+xlock -fontset "Noto Sans Mono" -mode ${array[$index]}
