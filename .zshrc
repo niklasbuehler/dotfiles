@@ -19,7 +19,7 @@ export IDEA_VM_OPTIONS="${XDG_CONFIG_HOME}"/intellij-idea/idea.vmoptions
 export EDITOR="vim"
 
 # configure system
-sudo loadkeys $HOME/.config/kbd/compose.inc
+#loadkeys -C $HOME/.config/kbd/compose.inc
 
 # configure zsh
 PROMPT='%B%F{red}%n%f%F{white}@%f%m%b %F{blue}%B%~%b%f %# '

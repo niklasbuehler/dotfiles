@@ -2,17 +2,19 @@
 xsetroot -cursor_name left_ptr
 wmname LG3D # this fixes the issues of java UIs with bspwm
 
-bspc monitor DP2 --reset-desktops 1 2 3 4
 bspc monitor --reset-desktops 1 2 3 4 # laptop
-#bspc monitor DP1 --reset-desktops 2 3 4 # desktop
+bspc monitor DP2 --reset-desktops 1
+bspc monitor DP1 --reset-desktops 2 3 4 # desktop
 
 bspc config single_monocle on
 bspc config gapless_monocle on
 bspc config borderless_monocle on
+bspc config border_width 1
+bspc config window_gap 1
 
 bspc config automatic_scheme alternate
 
 bspc rule -a Zathura state=tiled
 bspc rule -a Surf state=tiled
 
-track
+#track
