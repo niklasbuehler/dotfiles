@@ -32,6 +32,8 @@ set is
 map <leader>o :setlocal spell! spelllang=en_us<CR>
 " Insert new markdown todo item
 map <leader>t o- [ ] 
+" Toggle Goyo & Limelight
+nnoremap <Leader>g :Goyo<CR>
 
 " Splits open at the bottom and right
 set splitbelow splitright
@@ -75,6 +77,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 let g:limelight_conceal_ctermfg = 'green'
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
 " Initialize plugin system
 call plug#end()
