@@ -28,6 +28,8 @@ set is
 
 " Spell-check set to <leader>o, 'o' for 'orthography'
 map <leader>o :setlocal spell! spelllang=en_us<CR>
+" Insert new markdown todo item
+map <leader>t o- [ ] 
 
 " Splits open at the bottom and right
 set splitbelow splitright
@@ -65,3 +67,15 @@ endif
 
 " Run xrdb whenever Xdefaults or Xresources are updated.
 autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+let g:limelight_conceal_ctermfg = 'green'
+
+" Initialize plugin system
+call plug#end()
