@@ -20,7 +20,7 @@ export EDITOR="vim"
 export CHROME_EXECUTABLE="chromium"
 
 # configure system
-sudo loadkeys $HOME/.config/kbd/compose.inc
+#loadkeys -C $HOME/.config/kbd/compose.inc
 
 # configure zsh
 PROMPT='%B%F{red}%n%f%F{white}@%f%m%b %F{blue}%B%~%b%f %# '
