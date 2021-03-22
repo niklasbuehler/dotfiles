@@ -17,6 +17,7 @@ export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 export IDEA_PROPERTIES="${XDG_CONFIG_HOME}"/intellij-idea/idea.properties
 export IDEA_VM_OPTIONS="${XDG_CONFIG_HOME}"/intellij-idea/idea.vmoptions
 export EDITOR="vim"
+export CHROME_EXECUTABLE="chromium"
 
 # configure system
 sudo loadkeys $HOME/.config/kbd/compose.inc
