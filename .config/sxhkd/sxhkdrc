@@ -13,6 +13,8 @@ super + shift + r
 # spawning programs
 super + d
 	drawspawn
+super + shift + s
+	screenshot
 super + Return
 	st
 super + @space
