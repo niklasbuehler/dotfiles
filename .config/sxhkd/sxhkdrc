@@ -26,9 +26,10 @@ super + w
 super + shift + w
 	brave
 super + u
-	st vifm ~/Uni
+	st vifm ~
 super + e
-	mailsync; st neomutt
+	emacs
+	#mailsync; st neomutt
 super + r
 	st newsboat
 super + a
