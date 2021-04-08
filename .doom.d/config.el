@@ -81,3 +81,28 @@
   (setq appt-time-msg-list nil))
 ;; Create appointment reminders for agenda items every 30 minutes
 (run-with-timer 0 1800 (lambda() (org-agenda-to-appt)))
+;; Function to filter by priority
+(defun air-org-skip-subtree-if-priority (priority) "Skip an agenda subtree if it has a priority of PRIORITY. PRIORITY may be one of the characters ?A, ?B, or ?C."
+  (let ((subtree-end (save-excursion (org-end-of-subtree t)))
+        (pri-value (* 1000 (- org-lowest-priority priority)))
+        (pri-current (org-get-priority (thing-at-point 'line t))))
+    (if (= pri-value pri-current)
+        subtree-end
+      nil)))
+;; Custom agenda views
+(setq org-agenda-custom-commands
+      '(("u" "Unscheduled TODO"
+         ((todo ""
+                ((org-agenda-overriding-header "\nUnscheduled TODO")
+                 (org-agenda-skip-function '(org-agenda-skip-entry-if 'timestamp))
+                 (org-agenda-dim-blocked-tasks 'invisible))))
+         nil
+         nil)
+        ("d" "Daily agenda and actionable TODOs"
+                ((agenda "" ((org-agenda-span 2) (org-agenda-start-day "+0d")))
+                (alltodo ""
+                        ((org-agenda-skip-function '(or (air-org-skip-subtree-if-priority ?C)
+                                                        (org-agenda-skip-if nil '(scheduled deadline))))
+                        (org-agenda-dim-blocked-tasks 'invisible)
+                        (org-agenda-overriding-header "ALL normal priority tasks:"))))
+                ((org-agenda-compact-blocks t)))))
